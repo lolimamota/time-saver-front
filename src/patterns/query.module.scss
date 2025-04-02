@@ -1,0 +1,17 @@
+// ---------- VARIAVEIS MEDIA QUERY ----------
+$mobile: 320px;
+$desktop: 1024px;
+
+// ---------- FUNÇÕES ----------
+
+@mixin mediaMobile{
+    @media screen and (min-width: break.$mobile) and (max-width: break.$tablet) {
+        @content;
+    };
+}
+
+@mixin mediaDesktop{
+    @media screen and (min-width: break.$desktop) {
+        @content;
+    };
+}
