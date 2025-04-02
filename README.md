@@ -20,10 +20,17 @@
 
     - Filtrar por dia, paciente ou especialidade/exame.
 
+## Em desenvolvimento
+
+- ✅ Front-end e responsividade
+
+    - Uma interface agradavel, fácil e ágil para o usuário.
+
 ## Como Usar
 
 <div style="text-align:center"> ⚠️ <strong> Aviso Importante </strong>
 </div>
+<br>
 
 > _Deverão ser instalados os seguintes requisitos:_
 
@@ -77,8 +84,8 @@ pip install -r requirements.txt
 
 >Contribuições são bem-vindas! 💡
 
-[Github](https://www.github.com/lolimamota)
-[Email](mailto:contatealo@gmail.com)
+[Github](https://www.github.com/lolimamota), 
+[Email](mailto:contatealo@gmail.com) ou 
 [linkedIn](https://www.linkedin/in/lorraynelimamota)
 
 ## Agradecimentos
