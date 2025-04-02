@@ -28,6 +28,7 @@ function post_agenda() {
         </select>
         <select name="convenio" id="convenio">
           <option value="home">Selecione uma opção</option>
+          <option value="particular">Agendamento particular</option>
           <option value="amil">Amil</option>
           <option value="bradesco">Bradesco Saúde</option>
           <option value="unimed">Unimed</option>

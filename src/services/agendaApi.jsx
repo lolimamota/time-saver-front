@@ -7,4 +7,24 @@ export default function agendamento(){
     const [nome, setNome] = useState("");
     const [convenio, setConvenio] = useState("");
     const [especialidade, setEspecialidade] = useState("");
+
+    const enviarDados = async()=>{
+        const urlAPI = "https://time-saver-api.onrender.com/agendamento"
+
+        const enviarComo = {
+            nome,
+            horario,
+            dia,
+            especialidade,
+            convenio,
+        }
+
+        try{
+            const enviarApi = await axios.post(urlAPI, enviarDados);
+            console.log("Dados enviados, atendimento agendado:" , enviarApi.data);
+            agendaDados();
+        } catch(error){
+            console.error("Erro ao enviar dados, agendamento não realizado");
+        }
+    }
 }
