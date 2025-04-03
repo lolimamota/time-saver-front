@@ -20,7 +20,6 @@ export const novaAgenda = async (dados) => {
         return response.dados;
     } catch(error){
         console.error('Agendamento não foi concluído, tente novamente mais tarde!' , error);
-        throw error;
     }
 };
 
@@ -33,6 +32,27 @@ export const pegarAgenda = async () => {
         return response.dados;
     } catch(error) {
         console.error('Agendamento não localizado!', error);
-        throw error;
+    }
+}
+
+// PUT
+
+export const mudarAgenda = async (id, dados) => {
+    try{
+        const response = await mudarAgenda.put(`/update/${id}` , dados);
+        return response.dados;
+    } catch (error) {
+        console.error(`Agendamento ${id}, não pode ser atualizado, tente novamente mais tarde!` , error);
+    }
+}
+
+//DELETE
+
+export const excluirAgenda = async(id) => {
+    try{
+        const response = await excluirAgenda.delete(`/delete/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error(`Agendamento ${id}, não pode ser atualizado, tente novamente`)
     }
 }
