@@ -24,7 +24,7 @@ export default function agendamento(){
             console.log("Dados enviados, atendimento agendado:" , enviarApi.data);
             agendaDados();
         } catch(error){
-            console.error("Erro ao enviar dados, agendamento não realizado");
+            console.error("Erro ao enviar dados, agendamento não realizado", error);
         }
     }
 }
