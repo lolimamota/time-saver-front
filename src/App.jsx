@@ -3,10 +3,10 @@ import './global.scss';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 // -------------- IMPORT DE ROTAS E COMPONENTS --------------
-import Novo_agendamento from './components/agendamento/post_agenda.jsx';
-import Ver_agendamento from './components/verificar/get_agenda.jsx';
-import Header from './components/header/header.jsx';
-import Footer from './components/footer/footer.jsx';
+import Novo_agendamento from './components/agendamento/PostAgenda.jsx';
+import Ver_agendamento from './components/verificar/GetAgenda.jsx';
+import Header from './components/header/Header.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 
 function App() {
