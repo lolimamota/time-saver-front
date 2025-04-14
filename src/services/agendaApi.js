@@ -14,10 +14,10 @@ const enviarDados = axios.create({
 // NOVA AGENDA
 //POST
 
-export const novaAgenda = async (dados) => {
+export const novaAgenda = async (data) => {
     try{
-        const response = await enviarDados.post('/agendamentos' , dados);
-        return response.dados;
+        const response = await enviarDados.post('/agendamentos' , data);
+        return response.data;
     } catch(error){
         console.error('Agendamento não foi concluído, tente novamente mais tarde!' , error);
     }
@@ -29,7 +29,7 @@ export const novaAgenda = async (dados) => {
 export const pegarAgenda = async () => {
     try{
         const response = await enviarDados.get('/visualizar');
-        return response.dados;
+        return response.data;
     } catch(error) {
         console.error('Agendamento não localizado!', error);
     }
@@ -37,10 +37,10 @@ export const pegarAgenda = async () => {
 
 // PUT
 
-export const mudarAgenda = async (id, dados) => {
+export const mudarAgenda = async (id, data) => {
     try{
-        const response = await mudarAgenda.put(`/update/${id}` , dados);
-        return response.dados;
+        const response = await mudarAgenda.put(`/update/${id}` , data);
+        return response.data;
     } catch (error) {
         console.error(`Agendamento ${id}, não pode ser atualizado, tente novamente mais tarde!` , error);
     }
