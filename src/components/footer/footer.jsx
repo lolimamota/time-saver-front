@@ -1,8 +1,13 @@
+//IMPORTS GLOBAIS
 import React from 'react'
+
+//IMPORTS DE IMAGEM
+//IMPORTS DE ESTILO
+import S from '../../scss/components/footer/footer.module.scss'
 
 function footer() {
   return (
-    <footer>
+    <footer className={S.footerStyle}>
       <p>Design criado para o processo seletivo Time Saver - 2025</p>
       <p>Todos os direitos reservados</p>
       <ul>
