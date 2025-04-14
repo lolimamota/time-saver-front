@@ -8,12 +8,16 @@ import Ver_agendamento from './components/verificar/GetAgenda.jsx';
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
 
+//-------- IMPORTS DE ESTILO ------
+
+import S from './scss/components/app/app.module.scss';
+
 
 function App() {
   return (
-    <>
+    <main className={S.appStyle}>
     <Header />
-      <main>
+      <section>
         <BrowserRouter>
           <nav>
             <ul>
@@ -34,9 +38,9 @@ function App() {
             </Routes>
           </nav>
         </BrowserRouter>
-      </main>
+      </section>
       <Footer />
-    </>
+    </main>
   )
 }
 
