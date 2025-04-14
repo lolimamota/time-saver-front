@@ -8,7 +8,7 @@ import S from '../../scss/components/header/header.module.scss';
 
 function header() {
   return (
-    <header className={S.containerHeader}>
+    <header className={S.headerStyle}>
       <h1>Time Saver</h1>
     </header>
   )
