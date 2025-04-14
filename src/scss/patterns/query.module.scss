@@ -1,17 +1,19 @@
-// ---------- VARIAVEIS MEDIA QUERY ----------
-$mobile: 320px;
-$desktop: 1024px;
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == mobile {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
 
-// ---------- FUNÇÕES ----------
+    @else if $breakpoint == tablet {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            @content;
+        }
+    }
 
-@mixin mediaMobile{
-    @media screen and (min-width: break.$mobile) and (max-width: break.$tablet) {
-        @content;
-    };
-}
-
-@mixin mediaDesktop{
-    @media screen and (min-width: break.$desktop) {
-        @content;
-    };
+    @else if $breakpoint == desktop {
+        @media screen and (min-width: 1024px) {
+            @content;
+        }
+    }
 }
