@@ -1,4 +1,5 @@
 @use '../../patterns/mixins.module.scss' as mixins;
+
 .headerStyle{
-    font-size: ;
+    font-size: mixins.$font-h1;
 }
