@@ -1,8 +1,16 @@
+//IMPORTS PADRÃO
 import React from 'react'
+
+//IMPORT DE ESTILO
+import '../../global.scss';
+import S from '../../scss/components/header/header.module.scss';
+
 
 function header() {
   return (
-    <div>header</div>
+    <header className={S.containerHeader}>
+      <h1>Time Saver</h1>
+    </header>
   )
 }
 
