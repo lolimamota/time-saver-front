@@ -2,4 +2,6 @@
 
 .headerStyle{
     font-size: mixins.$font-h1;
+    background-image:mixins.$gradiente;
+    color: mixins.$text,
 }
