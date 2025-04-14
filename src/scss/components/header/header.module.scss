@@ -1,7 +1,22 @@
 @use '../../patterns/mixins.module.scss' as mixins;
 
-.headerStyle{
+.headerStyle {
     font-size: mixins.$font-h1;
-    background-image:mixins.$gradiente;
-    color: mixins.$text,
+    background-image: mixins.$gradiente;
+    padding: 1rem 1rem 1rem 10rem;
+
+    a {
+        color: mixins.$text;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    img {
+        width: 10rem;
+    }
+
+    div {
+        width: 100%;
+        @include mixins.flex($align: center, $gap: 2rem)
+    }
 }
