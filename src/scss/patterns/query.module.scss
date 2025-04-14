@@ -1,19 +1,13 @@
-@mixin respond-to($breakpoint) {
-    @if $breakpoint == mobile {
-        @media screen and (max-width: 767px) {
-            @content;
-        }
-    }
+@use './variables.module.scss' as variable;
 
-    @else if $breakpoint == tablet {
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            @content;
-        }
+@mixin mediaMobile {
+    @media screen and (min-width: variable.$mobile) and (max-width: variable.$tablet-1px) {
+        @content;
     }
+}
 
-    @else if $breakpoint == desktop {
-        @media screen and (min-width: 1024px) {
-            @content;
-        }
+@mixin mediaDesktop {
+    @media screen and (min-width: variable.$desktop) {
+        @content;
     }
 }

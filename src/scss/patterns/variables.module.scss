@@ -1,0 +1,23 @@
+// ------------- VARIAVEIS DE MEDIA QUERY ----------------
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1024px;
+
+
+// ---------------- VARIAVEIS DE TIPOGRAFIA -------------
+
+h1{
+    font-size: $font-h1;
+}
+h2{
+    font-size: $font-h2;
+}
+h3{
+    font-size: $font-h3;
+}
+p{
+    font-size: $font-p;
+}
+li{
+    font-size: $font-li;
+}
