@@ -15,10 +15,11 @@ import S from './scss/components/app/app.module.scss';
 
 function App() {
   return (
-    <main className={S.appStyle}>
-    <Header />
-      <section>
-        <BrowserRouter>
+
+    <BrowserRouter>
+      <main className={S.appStyle}>
+        <Header />
+        <section>
           <nav>
             <ul>
               <li>
@@ -37,10 +38,10 @@ function App() {
               <Route path="/ver_agendamento" element={<Ver_agendamento />} />
             </Routes>
           </nav>
-        </BrowserRouter>
-      </section>
-      <Footer />
-    </main>
+        </section>
+        <Footer />
+      </main>
+    </BrowserRouter >
   )
 }
 
