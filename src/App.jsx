@@ -34,6 +34,7 @@ function App() {
               </li>
             </ul>
             <Routes>
+            <Route path="/" />
               <Route path="/novo_agendamento" element={<Novo_agendamento />} />
               <Route path="/ver_agendamento" element={<Ver_agendamento />} />
             </Routes>
