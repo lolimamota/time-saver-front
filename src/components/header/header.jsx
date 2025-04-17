@@ -1,6 +1,6 @@
 //IMPORTS PADRÃO
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //IMPORT DE ESTILO
 import '../../global.scss';
@@ -13,14 +13,21 @@ import Logo from '../../assets/logo.png';
 function header() {
   return (
     <header className={S.headerStyle}>
-      <Link to="/">
-        <div>
-          <img src={Logo} alt="Imagem de uma engrenagem com um verificado verde" />
-          <h1>
-            Time Saver
-          </h1>
-        </div>
-      </Link>
+      <li>
+        <Link to="/">
+          <div>
+            <img src={Logo} alt="Imagem de uma engrenagem com um verificado verde" />
+            <h1>
+              Time Saver
+            </h1>
+          </div>
+        </Link>
+      </li>
+      <li>
+        <Link to='/'>
+          Home
+        </Link>
+      </li>
     </header>
   )
 }

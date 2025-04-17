@@ -33,11 +33,11 @@ function App() {
                   Agendamentos anteriores
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to='/'>
                   Home
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <Routes>
             <Route path="/" element={<Home />} />
