@@ -2,7 +2,7 @@
 
 .headerStyle {
     font-size: mixins.$font-h1;
-    padding: 1rem 1rem 1rem 10rem;
+    padding: 2vw;
 
     a {
         color: mixins.$text;
@@ -16,6 +16,8 @@
 
     div {
         width: 100%;
-        @include mixins.flex($align: center, $gap: 2rem)
+        @include mixins.flex($align: center, $gap: 2rem);
     }
+
+    @include mixins.flex($align: center, $gap: 60vw);
 }

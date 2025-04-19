@@ -25,7 +25,7 @@ function header() {
       </li>
       <li>
         <Link to='/'>
-          Home
+          <h2>Home</h2>
         </Link>
       </li>
     </header>
