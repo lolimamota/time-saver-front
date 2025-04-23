@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 
-function Home() {
+export default function HomeLayout() {
     return (
-        <div>Home</div>
+        <div>
+            <h2>Selecione uma opção para continuar:</h2>
+            <Outlet />
+        </div>
     )
-}
-
-export default Home
+};
