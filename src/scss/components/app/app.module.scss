@@ -12,3 +12,19 @@
         font-size: mixins.$font-p;
     }
 }
+
+.navStyle{
+    border: solid green;
+}
+
+.ulStyle{
+    border: solid orangered;
+    height: 50vh;
+    @include mixins.flex($align: center, $justify: center);
+
+    li{
+        border: solid 5px mixins.$border;
+        width: 30vw;
+        height: 30vh;
+    }
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 
+//IMPORT DE ESTILO
+import S from '../../scss/components/routes/route.module.scss';
+
 function post_agenda() {
   return (
-    <main>
+    <main className={S.mainPost}>
       <h2>Preencha as informações:</h2>
       <form>
         <input type="text" id="nome" placeholder="Digite seu nome" name="nome" />

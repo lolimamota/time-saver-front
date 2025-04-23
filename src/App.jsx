@@ -19,8 +19,8 @@ function App() {
       <main className={S.appStyle}>
         <Header />
         <section>
-          <nav>
-            <ul>
+          <nav className={S.navStyle}>
+            <ul className={S.ulStyle}>
               {/* <li>
                 <Link to='/'>
                   Home
