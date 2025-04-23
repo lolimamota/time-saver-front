@@ -26,7 +26,7 @@ function footer() {
         </li>
       </ul>
       <div className={S.secondColumn}>
-        <p>Design criado para o processo seletivo Time Saver - 2025</p>
+        <p>Design criado para o processo seletivo TimeSaver - 2025</p>
         <p>Todos os direitos reservados</p>
       </div>
       <ul className={S.thirdColumn}>
